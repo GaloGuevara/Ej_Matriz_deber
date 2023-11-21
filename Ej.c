@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
     // Declaración de la matriz
     int matriz[n][m];
 
-    //bloque donde inicializamos toda la matriz en ceros
+    // bloque donde inicializamos toda la matriz en ceros
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
@@ -32,7 +32,32 @@ int main(int argc, char const *argv[])
         }
     }
 
-    //bloque donde mostramos en pantalla que la matriz se inicializo en ceros
+    // bloque donde mostramos en pantalla que la matriz se inicializo en ceros
+    printf("La matriz inicializada en ceros es:\n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            printf("%d\t", matriz[i][j]);
+        }
+        printf("\n"); // aqui se hace el  salto de linea para cada fila de la matriz
+    }
+    printf("\n----------------------------------------------------------------------------------------\n");
+
+    // bloque donde cambiamos los elementos de la diagonal por valores igual a 1
+    printf("La matriz con la diagonal principal llena de valores 1 es:\n");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            if (i == j)
+            {
+                matriz[i][j] = 1;
+            }
+        }
+    }
+
+    // bloque donde mostramos en pantalla que la matriz con la diagonal cambiada
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
@@ -41,7 +66,7 @@ int main(int argc, char const *argv[])
         }
         printf("\n");
     }
-    
+    printf("\n");
 
     return 0;
 }
