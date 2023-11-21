@@ -11,6 +11,15 @@ Entregue la URL a su repositorio de Github.*/
 
 int main(int argc, char const *argv[])
 {
-    /* code */
+    int n, m;//Variables enteras de las dimensiones de la matriz
+
+    //bloque de ingreso por el usuario de las dimensiones de la matriz
+    printf("Ingrese el numero de filas: ");
+    scanf("%d%*c", &n);
+    printf("Ingrese el numero de columnas: ");
+    scanf("%d%*c", &m);
+    printf("Se va a mostrar una matriz nxm = %dx%d\n", n,m); //muestra como confirmación la dimensión de la matriz en pantalla
+
+
     return 0;
 }
